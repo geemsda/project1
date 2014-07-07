@@ -1,5 +1,41 @@
-Lets Pretend that this is a first line
 
-and a second
 
-and a third
+fhand = open('u.item')
+
+titleList = []
+
+for line in fhand:
+     	movieid,
+     	movietitle, 
+     	releasedate, 
+     	videoreleasedate,
+        IMDbURL,
+	unknown, 
+	Action, 
+	Adventure,
+	Animation,
+	Children,
+ 	Comedy, 
+	Crime, 
+	Documentary,
+	Drama, 
+	Fantasy,
+	Film-Noir,
+ 	Horror,
+	Musical,	
+	Mystery,
+	Romance, 
+	Sci-Fi,
+	Thriller,
+	War,	
+	Western  
+ 		 = line.split =("\t")
+
+	if line.find('1959') == -1:
+  	   continue
+
+	titleList.append(movietitle)
+
+
+ print titleList
+     
